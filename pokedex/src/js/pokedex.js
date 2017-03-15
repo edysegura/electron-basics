@@ -1,4 +1,5 @@
 const pokeDB = require(__dirname + '/js/pokeDB.json')
+const leftPad = require('left-pad')
 
 const form = document.querySelector('form')
 const input = document.querySelector('input')
@@ -15,6 +16,7 @@ function showPokemonData (pokeId) {
 }
 
 form.onsubmit = () => {
-    showPokemonData(input.value)
+    let pokeId = leftPad(input.value, 3, 0)
+    showPokemonData(pokeId)
     return false
 }

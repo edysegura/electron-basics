@@ -18,12 +18,17 @@ body {
     /*-webkit-app-region: drag;*/
 }
 
+img[src=""] {
+    visibility: hidden
+}
+
 img {
     position: absolute;
     top: 190px;
     left: 130px;
     width: 150px;
     height: 150px;
+    border: none;
 }
 
 input::-webkit-outer-spin-button,

@@ -6,9 +6,10 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "postinstall": "node ./scripts/catch-them-all"
+    "catch-them-all": "node ./scripts/catch-them-all"
   },
   "dependencies": {
-    "electron": "^1.6.2"
+    "electron": "^1.6.2",
+    "left-pad": "^1.1.3"
   }
 }
