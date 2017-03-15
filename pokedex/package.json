@@ -5,7 +5,8 @@
   "author": "GDG",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "node ./scripts/catch-them-all"
   },
   "dependencies": {
     "electron": "^1.6.2"
