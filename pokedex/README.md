@@ -1,13 +1,11 @@
-# Electron Basics
+# Pokédex with Electron
 
-Learning Electron by doing following these simple examples below.
+This is a pokédex example built with electron. To run make sure you have [yarn](https://yarnpkg.com/en/) installed and then ran the commands below:
 
-- [Quick Start](quick-start)
-- [Pokédex](pokedex)
- 
-## References
-
-- [Quick Start - Electron](https://electron.atom.io/docs/tutorial/quick-start/)
+```
+yarn install
+yarn start
+```
 
 ---
 In case you have doubt why I'm not using semicolon is because I got inspiration from these talks: 
