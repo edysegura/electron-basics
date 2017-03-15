@@ -1,0 +1,13 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "author": "GDG",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
+}
