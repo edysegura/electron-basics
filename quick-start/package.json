@@ -1,0 +1,10 @@
+{
+  "name": "quick-start",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "GDG",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
+}
