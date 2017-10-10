@@ -4,6 +4,10 @@ Learning Electron by doing following these simple examples below.
 
 - [Quick Start](quick-start)
 - [Pokédex](pokedex)
+
+## Front-end beyond the browser
+
+These examples were demonstrated in this talk: [Front-end beyond the browser](https://www.slideshare.net/edysegura/frontend-beyond-the-browser).
  
 ## References
 
