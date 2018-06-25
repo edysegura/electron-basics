@@ -7,16 +7,15 @@ const image = document.querySelector('img')
 const dt = document.querySelector('dt')
 const dd = document.querySelector('dd')
 
-
-function showPokemonData (pokeId) {
-    let pokeData = pokeDB.find(poke => poke.id == pokeId)
-    image.src = `images/pokemons/${pokeId}.png`
-    dt.innerHTML = pokeData.name
-    dd.innerHTML = pokeData.type
+function showPokemonData(pokeId) {
+  let pokeData = pokeDB.find(poke => poke.id == pokeId)
+  image.src = `images/pokemons/${pokeId}.png`
+  dt.innerHTML = pokeData.name
+  dd.innerHTML = pokeData.type
 }
 
 form.onsubmit = () => {
-    let pokeId = leftPad(input.value, 3, 0)
-    showPokemonData(pokeId)
-    return false
+  let pokeId = leftPad(input.value, 3, 0)
+  showPokemonData(pokeId)
+  return false
 }
