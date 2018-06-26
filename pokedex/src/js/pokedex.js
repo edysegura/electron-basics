@@ -1,8 +1,6 @@
 const pokeDB = require(__dirname + '/js/pokeDB.json')
-const leftPad = require('left-pad')
 
 const form = document.querySelector('form')
-const input = document.querySelector('input')
 const image = document.querySelector('img')
 const dt = document.querySelector('dt')
 const dd = document.querySelector('dd')
@@ -10,12 +8,15 @@ const dd = document.querySelector('dd')
 function showPokemonData(pokeId) {
   let pokeData = pokeDB.find(poke => poke.id == pokeId)
   image.src = `images/pokemons/${pokeId}.png`
-  dt.innerHTML = pokeData.name
-  dd.innerHTML = pokeData.type
+  dt.textContent = pokeData.name
+  dd.textContent = pokeData.type
 }
 
-form.onsubmit = () => {
-  let pokeId = leftPad(input.value, 3, 0)
+const onFormSubmit = event => {
+  event.preventDefault()
+  const [ input ] = event.target.elements
+  const pokeId = input.value.padStart(3, 0)
   showPokemonData(pokeId)
-  return false
 }
+
+form.addEventListener('submit', onFormSubmit)
