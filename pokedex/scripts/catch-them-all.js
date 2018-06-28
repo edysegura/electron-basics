@@ -35,7 +35,7 @@ function catchPokemon(pokemonNumber) {
   })
 }
 
-for (var index = 1; index < 252; index++) {
-  var pokemonNumber = String(index).padStart(3, '0')
+for (let index = 1; index < 252; index++) {
+  const pokemonNumber = String(index).padStart(3, '0')
   catchPokemon(pokemonNumber)
 }
