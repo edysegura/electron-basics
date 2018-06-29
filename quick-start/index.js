@@ -8,7 +8,7 @@ let versions = {
 }
 
 function showVersion(item) {
-  document.getElementById(item).innerHTML = versions[item]
+  document.getElementById(item).textContent = versions[item]
 }
 
 Object.keys(versions).forEach(showVersion)
