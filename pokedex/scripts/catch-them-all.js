@@ -13,7 +13,7 @@ function catchPokemon(pokemonNumber) {
       return undefined
     }
 
-    var chunks = []
+    let chunks = []
     response.on('data', (chunk) => chunks.push(chunk))
 
     response.on('end', () => {
