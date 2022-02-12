@@ -2,12 +2,14 @@
   "name": "quick-start",
   "version": "1.0.0",
   "main": "main.js",
-  "author": "GDG",
   "license": "MIT",
   "scripts": {
     "start": "electron ."
   },
-  "dependencies": {
-    "electron": "^2.0.3"
+  "devDependencies": {
+    "electron": "^17.0.0"
+  },
+  "volta": {
+    "node": "16.14.0"
   }
 }
