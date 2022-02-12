@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <title>My First Electron App</title>
 </head>
 <body>
@@ -11,21 +12,20 @@
   <ul>
     <li>
       Node Version:
-      <span id="node">0</span>
+      <span id="node-version">0</span>
     </li>
     <li>
       Chrome:
-      <span id="chrome">0</span>
+      <span id="chrome-version">0</span>
     </li>
     <li>
       Electron:
-      <span id="electron">0</span>
+      <span id="electron-version">0</span>
     </li>
     <li>
       App info:
       <span id="appInfo">0</span>
     </li>
   </ul>
-  <script src="index.js"></script>
 </body>
 </html>
