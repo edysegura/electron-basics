@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
+  "author": "Edy Segura",
+  "description": "Electron quick start project",
   "scripts": {
     "start": "electron ."
   },
